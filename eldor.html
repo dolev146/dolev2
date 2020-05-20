@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>hello</h1>
+    <script>
+      let h = document.getElementsByTagName("h1")[0];
+      let indexColor = 0;
+      let colors = ["red", "blue", "green", "purple"];
+      h.addEventListener("click", dodo);
+      function dodo(e) {
+        h.style.color = colors[indexColor];
+        indexColor++;
+        if (indexColor === 5) {
+          indexColor = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
